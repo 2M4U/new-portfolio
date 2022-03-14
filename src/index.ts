@@ -4,12 +4,13 @@ import express from "express";
 const app = express();
 const port = process.env.PORT || 3333;
 
-app.use(bodyParser.json());
+app.use(express.static("public"));
+app.set("view engine", "ejs");
 app.use(bodyParser.raw({ type: "application/vnd.custom-type" }));
 app.use(bodyParser.text({ type: "text/html" }));
 
 app.get("/", async (req, res) => {
-  res.json({ Hello: "World" });
+  res.render("index");
 });
 
 app.listen(port, () => {

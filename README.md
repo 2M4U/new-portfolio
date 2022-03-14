@@ -1,19 +1,28 @@
-# My Personal Portfolio
+---
+title: ExpressJS
+description: An ExpressJS server
+tags:
+  - express
+  - typescript
+---
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7fb0568f-316f-4a1c-9cf3-8aa3473c23c8/deploy-status)](https://app.netlify.com/sites/2m4u/deploys)
+# ExpressJS Example
 
-###### This is just an example using Lanyard for the Spotify Feature.
-###### I got bored so I thought I'd try making a Linux-based GUI Spotify/Portfolio.
+This example starts an [ExpressJS](https://expressjs.com/) server.
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new?template=https%3A%2F%2Fgithub.com%2Frailwayapp%2Fexamples%2Ftree%2Fmaster%2Fexamples%2Fexpressjs)
 
-*[View Demo](https://2m4u.netlify.app/)*
+## ✨ Features
 
-##### Screenshot Example
-<img src="https://i.imgur.com/CLrZtBU.gif"/>
+- Express
+- TypeScript
 
-## Acknowledgements
+## 💁‍♀️ How to use
 
-- [Phineas Walton](https://github.com/Phineas/) – Author of Lanyard
-- [2M4U](https://github.com/2m4u/) – Author of this Portfolio
-- [Dustin Rouillard](https://github.com/dustinrouillard/) – for bits of helpful guidance with setting up Lanyard
-- [pxseu](https://github.com/pxseu) - helpful guidance on fixing the socket closing bug I have
+- Install dependencies `yarn`
+- Connect to your Railway project `railway link`
+- Start the development server `railway run yarn dev`
+
+## 📝 Notes
+
+The server started simply returns a `Hello: "World"` payload in JSON. The server code is located in `src/index.js`.
